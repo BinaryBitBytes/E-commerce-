@@ -9,8 +9,8 @@ Category.init(
   {
     // define columns
     id: INTEGER,
-    value: not_null; //! double check this . likely wrong
-    primaryKey: , //! double check this . likely wrong
+    value: not_null, //! double check this . likely wrong
+    primaryKey: Category , //! double check this . likely wrong
     use: auto_increment, //! double check this . likely wrong
     category_name, //! double check this . likely wrong
   },
