@@ -12,15 +12,11 @@ Category.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       auto_increment: true,
-      allowNull: false //! double check this . likely wrong
+      allowNull: false 
     },
     category_name:{
       type: DataTypes.STRING,
-    } //! double check this . likely wrong
-    // value:{
-    //   type: DataTypes.INTEGER
-    // }, //! double check this . likely wrong
-    //primaryKey: Category , //! double check this . likely wrong
+    },
   },
   {
     sequelize,
