@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const { INTEGER } = require('sequelize/types');
+//const { INTEGER } = require('sequelize/types');
 
 const sequelize = require('../config/connection.js');
 
@@ -8,11 +8,19 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
-    id: INTEGER,
-    value: not_null, //! double check this . likely wrong
-    primaryKey: Category , //! double check this . likely wrong
-    use: auto_increment, //! double check this . likely wrong
-    category_name, //! double check this . likely wrong
+    id:{
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      auto_increment: true,
+      allowNull: false //! double check this . likely wrong
+    },
+    category_name:{
+      type: DataTypes.STRING,
+    } //! double check this . likely wrong
+    // value:{
+    //   type: DataTypes.INTEGER
+    // }, //! double check this . likely wrong
+    //primaryKey: Category , //! double check this . likely wrong
   },
   {
     sequelize,
