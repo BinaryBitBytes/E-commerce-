@@ -7,19 +7,19 @@ class ProductTag extends Model {}
 ProductTag.init(
   {// define columns
     id:{
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER, // declared id datatype as an interger
       primaryKey: true,
       autoIncrement: true,
     },
     product_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,// declared id datatype as an interger
       references: {
         model: 'product',
         key: 'id',
       },
     },
     tag_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,// declared id datatype as an interger 
       references: {
         model: 'tag',
         key: 'id',
@@ -27,11 +27,11 @@ ProductTag.init(
     }
   },
   {
-    sequelize,
-    timestamps: false,
+    sequelize, //using sequelize
+    timestamps: false, //no time stamps
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'product_tag', // model name
   }
 );
 
