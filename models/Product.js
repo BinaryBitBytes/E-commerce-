@@ -10,7 +10,8 @@ Product.init(
     id: {
       type: DataTypes.INTEGER, // product id is an interger
       primaryKey: true, // this is the primary key, being the ID
-      autoIncrement: true
+      autoIncrement: true,
+      allowNull: false
     },
     product_name: {
       type: DataTypes.STRING, //product name is a string

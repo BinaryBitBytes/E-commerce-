@@ -8,6 +8,7 @@ Category.init(
   {
     // define columns
     id:{
+      allowNull: false,
       type: DataTypes.INTEGER, // declared id type as an interger
       primaryKey: true, //made primary key
       auto_increment: true, // auto incremented the ID
