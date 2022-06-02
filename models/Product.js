@@ -32,12 +32,7 @@ Product.init(
       }
     },
     category_id: {
-<<<<<<< HEAD
-      type: DataTypes.INTEGER,
-      allowNull: false,
-=======
       type: DataTypes.INTEGER, // this is the category ID as an interger
->>>>>>> dabdd145ff6b44e0677d5eb9caf1022a7a71dffa
       references: {
         model: 'category',
         key: 'id',
