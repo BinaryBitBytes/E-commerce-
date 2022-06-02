@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-//const { INTEGER } = require('sequelize/types');
 
 const sequelize = require('../config/connection.js');
 
@@ -9,22 +8,21 @@ Category.init(
   {
     // define columns
     id:{
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      auto_increment: true,
-      //allowNull: true
+      type: DataTypes.INTEGER, // declared id type as an interger
+      primaryKey: true, //made primary key
+      auto_increment: true, // auto incremented the ID
     },
     category_name:{
-      type: DataTypes.STRING,
-      //allowNull: true
+      type: DataTypes.STRING, // declared category name as a string
+      allowNull: false
     },
   },
   {
-    sequelize,
+    sequelize, // using sequelize
     timestamps: false,
-    freezeTableName: true,
+    freezeTableName: true, // freeze table names
     underscored: true,
-    modelName: 'category',
+    modelName: 'category', //declaring model name as a category
   }
 );
 
