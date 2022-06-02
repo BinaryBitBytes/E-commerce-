@@ -19,7 +19,7 @@ const categoryData = [
   },
   {
     category_name: 'Shoes',
-   id: 5
+    id: 5
   },
 ];
 
